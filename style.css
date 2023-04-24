@@ -10,7 +10,6 @@ nav {
     background-color: rgb(33, 33, 33);
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .lista {
@@ -24,12 +23,14 @@ ul {
 }
 
 li {
-    text-decoration: none;
-    color: white;
     border-radius: 50px;
     padding: 10px 20px;
     transition: 0.25s ease-in-out ;
-    
+}
+
+.lista a {
+    text-decoration: none;
+    color: white;
 }
 
 li:hover {
