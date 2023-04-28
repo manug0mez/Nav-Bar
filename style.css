@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Glory&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
-    padding-top: 75px;
-    box-sizing: border-box;
+    background-color: #d8dad8;
+    height: 100%;
 }
 
 nav {
@@ -59,3 +60,128 @@ ul {
     transform: scale(1.2);
     box-shadow: 0 0 20px #2ecc71;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    padding-top: 115px;
+    padding-bottom: 20px;
+    flex-direction: column;
+}
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.landing {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+.landing h1 {
+    font-family: 'Bruno Ace SC', cursive;
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 14ch;
+    animation: typing 2s steps(18), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+.landing__input {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.landing__input input {
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid #29323D;
+    transition: 0.35s;
+}
+
+#send {
+    background-color: #29323D;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#more {
+    margin-left: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#send:hover {
+    background-color: #24272c;
+    border-color: #24272c;
+}
+
+.landing__input input:hover {
+    box-shadow: 0 0 10px #29323D;
+    cursor: pointer;
+}
+
+.right-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing__img {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    height: 100%;
+    background-size: cover;
+}
+
+.texto {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 25px;
+}
+
+.descripcion {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    padding: 20px;
+}
+
